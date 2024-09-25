@@ -1,14 +1,16 @@
 {
   "name": "laundry-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Laundry service API built with Node.js and TypeScript",
+  "main": "dist/app.js", 
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-   "start": "node app.js"
+    "start": "node dist/app.js", 
+    "dev": "nodemon src/app.ts",   
+    "build": "tsc",                
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["laundry", "api", "typescript", "express", "mongodb"],
+  "author": "okwy-tech",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
